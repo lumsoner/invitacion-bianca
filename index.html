@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fbf8f5">
+<meta name="description"
+    content="Bianca te invita a celebrar sus 15 años. ¡Te espera una noche inolvidable!">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta property="og:title" content="Mis XV años | Bianca">
+<meta property="og:description"
+    content="28 de noviembre · 21:00 hs · Toca para ver.">
+<meta property="og:url"
+    content="URL_PUBLICA_DE_LA_INVITACION">
+<meta property="og:image"
+    content="URL_PUBLICA_DE_LA_IMAGEN_DE_PORTADA">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+    <title>Bianca | Mis 15 años</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- PORTADA INICIAL -->
+<section class="portada portada-con-sobre" id="portada">
+    <div class="marco-portada"></div>
+    <!-- SOBRE ANIMADO -->
+    <div class="escena-sobre" id="escenaSobre">
+        <div class="tarjeta-sobre">
+            <span class="tarjeta-linea">MIS XV AÑOS</span>
+            <span class="tarjeta-numero">15</span>
+            <span class="tarjeta-nombre">Bianca</span>
+        </div>
+        <div class="sobre">
+            <div class="sobre-cuerpo"></div>
+            <div class="sobre-solapa"></div>
+            <div class="sobre-lateral sobre-lateral-izquierdo"></div>
+            <div class="sobre-lateral sobre-lateral-derecho"></div>
+            <div class="sobre-base"></div>
+            <div class="sello-sobre">
+                <span>15</span>
+            </div>
+        </div>
+        <p class="mensaje-sobre">
+            Una invitación especial para vos
+        </p>
+        <button
+            id="abrirSobre"
+            class="boton boton-dorado boton-abrir-sobre"
+            type="button">
+            ABRIR INVITACIÓN
+        </button>
+        <p class="portada-pie">28 · NOVIEMBRE · 2026</p>
+    </div>
+</section>
+<!-- INVITACIÓN -->
+    <main id="invitacion" hidden>
+<!-- DECORACIÓN DE ESQUINAS -->
+    <div class="esquina esquina-superior-izquierda">
+        <img src="esquinas-doradas.png" alt="">
+    </div>
+    <div class="esquina esquina-superior-derecha">
+        <img src="esquinas-doradas.png" alt="">
+    </div>
+    <div class="contenido">
+    <!-- PRESENTACIÓN -->
+        <header class="encabezado">
+        <img
+        class="ornamento-quince"
+        src="ornamento-dorado.png"
+        alt=""
+        >
+        <p class="numero-quince">15</p>
+        <h1 class="nombre">Bianca</h1>
+        <p class="sobrelinea">MIS XV AÑOS</p>
+        <div class="linea-dorada"></div>
+        <p class="frase">
+        Hay momentos que se vuelven inolvidables
+        cuando los compartimos.
+        </p>
+        <p class="texto-presentacion">
+        Quiero invitarte a celebrar conmigo
+        una noche muy especial.
+        </p>
+        </header>
+        <!-- FECHA -->
+        <section class="seccion" id="fecha-evento">
+        <p class="etiqueta">Reserva tu fecha</p>
+        <div class="fecha-card">
+            <p class="fecha-semana">Sábado</p>
+            <p class="fecha-principal">28 de noviembre</p>
+            <div class="linea-dorada"></div>
+            <p class="horario">21:00 A 06:00 HS</p>
+        </div>
+        <!-- CUENTA REGRESIVA -->
+        <div class="contador">
+            <div class="contador-item">
+            <span id="dias">00</span>
+            <small>DÍAS</small>
+            </div>
+            <span class="punto">|</span>
+            <div class="contador-item">
+            <span id="horas">00</span>
+            <small>HORAS</small>
+            </div>
+            <span class="punto">|</span>
+
+            <div class="contador-item">
+            <span id="minutos">00</span>
+            <small>MINUTOS</small>
+            </div>
+        </div>
+        <p id="contadorNota" class="texto-suave"></p>
+        </section>
+        <!-- UBICACIÓN -->
+        <section class="seccion" id="ubicacion">
+        <p class="etiqueta">Ubicación</p>
+        <h2>Nos encontramos ahí</h2>
+        <div class="linea-dorada"></div>
+        <p class="texto-dato">Varela 6785</p>
+        <p class="texto-suave">
+        Guardá la ubicación para tenerla a mano.
+        </p>
+        <a
+            class="boton boton-contorno"
+            href="https://www.google.com/maps/search/?api=1&query=Varela+6785"
+            target="_blank"
+            rel="noopener noreferrer">
+            VER UBICACIÓN ↗
+        </a>
+        </section>
+        <!-- VESTIMENTA -->
+        <section class="seccion seccion-nude" id="vestimenta">
+        <p class="etiqueta">Dress code</p>
+        <h2>Elegante sport</h2>
+        <div class="linea-dorada"></div>
+        <p class="texto-suave">
+            Una ocasión especial, un look que te haga sentir increíble.
+        </p>
+        </section>
+        <!-- REGALOS -->
+        <section class="seccion" id="regalos">
+        <p class="etiqueta">Un detalle</p>
+        <h2>Tu presencia es mi mejor regalo</h2>
+        <div class="linea-dorada"></div>
+        <p class="texto-suave">
+            Si deseás hacerme un regalo, podés utilizar mi alias.
+        </p>
+        <div class="alias-card">
+            <span class="alias-etiqueta">ALIAS</span>
+            <p id="aliasRegalo" class="alias">
+            gomezbianca02
+            </p>
+            <button
+            id="copiarAlias"
+            class="boton boton-contorno"
+            type="button">
+            COPIAR ALIAS
+            </button>
+            <p id="estadoCopia" class="estado" aria-live="polite"></p>
+        </div>
+        </section>
+        <!-- CONFIRMACIÓN -->
+        <section class="seccion confirmacion" id="confirmacion">
+        <p class="etiqueta">Confirmación </p>
+        <h2>¿Me acompañás?</h2>
+        <div class="linea-dorada"></div>
+        <p class="texto-suave">
+            Por favor, indicá el nombre y apellido
+            de cada persona que asistirá.
+        </p>
+        <form id="formConfirmacion">
+            <div id="invitados" class="lista-invitados">
+            <div class="fila-invitado">
+                <input
+                id="invitado-1"
+                class="input-invitado"
+                name="invitado[]"
+                type="text"
+                placeholder="Nombre y apellido"
+                aria-label="Nombre y apellido del invitado"
+                maxlength="100"
+                required>
+            </div>
+            </div>
+            <button
+            id="agregarInvitado"
+            class="boton boton-contorno boton-agregar"
+            type="button">
+            + AGREGAR INVITADO
+            </button>
+            <button
+            id="btnConfirmar"
+            class="boton boton-dorado boton-enviar"
+            type="submit">
+            CONFIRMAR ASISTENCIA ↗
+            </button>
+            <p
+            id="estadoConfirmacion"
+            class="estado"
+            aria-live="polite">
+            </p>
+        </form>
+        </section>
+    </div>
+    </main>
+
+<!-- PANTALLA FINAL -->
+<section id="pantallaGracias" class="pantalla-gracias" hidden>
+    <div class="cierre cierre-gracias">
+        <p class="final-sobrelinea">MIS XV AÑOS</p>
+        <p class="final-ornamento" aria-hidden="true">✧</p>
+        <p class="frase-final">¡Te espero!</p>
+        <p class="mensaje-final">
+            Nos espera una noche muy especial.
+            ¡Qué lindo que seas parte de ella!
+        </p>
+        <p class="fecha-final">
+            SÁBADO · 28 DE NOVIEMBRE · 21:00 HS
+        </p>
+        <div class="final-linea"></div>
+        <p class="firma">Saludos, Bianca</p>
+        <button
+            id="volverInvitacion"
+            class="boton boton-dorado boton-volver"
+            type="button">
+            VOLVER A LA INVITACIÓN
+        </button>
+    </div>
+</section>
+    <!-- CONTROL DE MÚSICA -->
+    <button
+    id="controlMusica"
+    class="control-musica"
+    type="button"
+    aria-pressed="false"
+    hidden>
+    ♫ ACTIVAR MÚSICA
+    </button>
+    <audio id="musica" loop preload="none">
+    <source src="musica.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
